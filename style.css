@@ -1,0 +1,158 @@
+:root {
+  --sidebar-width: 260px;
+  --text-color: #2b2b2b;
+  --muted: #6b6b6b;
+  --accent: #3f6fb5;
+  --border: #e6e6e6;
+  --bg: #ffffff;
+  --sidebar-bg: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background: var(--bg);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.page {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  padding: 3rem 1.5rem;
+  border-right: 1px solid var(--border);
+  background: var(--sidebar-bg);
+  text-align: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.3rem;
+  margin: 0 0 0.2rem;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0 0 1.2rem;
+}
+
+.bio {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.social-links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+.content {
+  flex: 1;
+  padding: 3rem 2.5rem;
+  min-width: 0;
+}
+
+.masthead {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.masthead a {
+  margin-right: 1.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.masthead a:hover {
+  color: var(--accent);
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+.entry {
+  margin-bottom: 1.5rem;
+}
+
+.entry h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.entry .meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0 0 0.4rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 700px) {
+  .page {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .content {
+    padding: 2rem 1.25rem;
+  }
+}
