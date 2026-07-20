@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ben Longaker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="page">
 
     <!-- ============ SIDEBAR ============ -->
     <aside class="sidebar">
-      <img class="avatar" src="images/profile_photo.JPG" alt="">
+      <img class="avatar" src="images/profile_photo.JPG" alt="Ben Longaker">
 
-      <h1 class="name"></h1>
-      <p class="tagline"></p>
-
-      <p class="bio"></p>
+      <h1 class="name">Ben Longaker</h1>
+      <p class="tagline">PhD Student in CSEM, UT Austin</p>
 
       <ul class="social-links">
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+        <li><a href="mailto:blongaker@utexas.edu">Email</a></li>
+        <li><a href="https://github.com/blongaker">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/ben-longaker">LinkedIn</a></li>
+        <li><a href="https://scholar.google.com/citations?user=sX0FjrwAAAAJ&hl=en">Google Scholar</a></li>
       </ul>
     </aside>
 
@@ -31,46 +31,63 @@
     <div class="content">
 
       <nav class="masthead">
-        <a href="#about"></a>
-        <a href="#research"></a>
-        <a href="#publications"></a>
-        <a href="#cv"></a>
+        <a href="#about">About Me</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#cv">CV</a>
       </nav>
 
       <section id="about">
-        <h2></h2>
-        <p></p>
+        <h2>About Me</h2>
+        <p>
+          Hello! I am a graduate student in the Computational Science, Engineering, and Mathematics (CSEM) PhD program
+          at the
+          Oden Institute at UT Austin. I work with George Biros, where I am developing fast surrogates for solving
+          chemical networks with error guarantees.
+          I am also a member of the NSF-Simons AI Institute for Cosmic Origins (CosmicAI). My research interests focus
+          on numerical
+          analysis, applied mathematics, scientific computing, and developing/analyzing algorithms for solving
+          differential equations.
+        </p>
+
+        <p>
+          Prior to joining Oden, I completed my undergraduate work at the Colorado School of Mines,
+          where I graduated summa cum laude with a B.S. in Computational and Applied Mathematics and a minor in Physics.
+          I did undergraduate research with Steve Pankavich, where I worked on using active subspace
+          methods to analyze sensitivities of plasmas arising in tokamaks and stellarators.
+        </p>
       </section>
 
       <section id="research">
-        <h2></h2>
+        <h2>Research</h2>
         <div class="entry">
-          <h3></h3>
-          <p></p>
-        </div>
-        <div class="entry">
-          <h3></h3>
-          <p></p>
+          <h3>HATANN: High-dimensional approximation using Taylor expansions and Adaptive Nearest Neighbors</h3>
+          <p>
+            Including chemistry to MHD in large-scale star simulations increases computational costs by around 10x.
+            Hence, we are interested in creating a fast surrogate to replace the full chemistry solve.
+            HATANN is an algorithm that uses nearest neighbors to achieve this, along with Taylor expansions to include
+            error guarantees.
+          </p>
         </div>
       </section>
 
       <section id="publications">
-        <h2></h2>
+        <h2>Publications</h2>
         <div class="entry">
-          <h3></h3>
-          <p class="meta"></p>
-          <p></p>
+          <h3>Publication Title</h3>
+          <p class="meta">Co-authors, Journal/Conference, Year</p>
+          <p>Brief summary of the publication, contributions, and key results...</p>
         </div>
         <div class="entry">
-          <h3></h3>
-          <p class="meta"></p>
-          <p></p>
+          <h3>Publication Title</h3>
+          <p class="meta">Co-authors, Journal/Conference, Year</p>
+          <p>Brief summary of the publication, contributions, and key results...</p>
         </div>
       </section>
 
       <section id="cv">
-        <h2></h2>
-        <p><a href="cv.pdf"></a></p>
+        <h2>Curriculum Vitae</h2>
+        <p><a href="cv.pdf">Download CV (PDF)</a></p>
       </section>
 
     </div>
@@ -78,4 +95,5 @@
   </div>
 
 </body>
+
 </html>
